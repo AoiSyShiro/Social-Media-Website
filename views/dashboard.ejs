@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h2>Posts</h2>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li><strong><%= post.title %></strong>: <%= post.content %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
